@@ -33,3 +33,24 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run src/dashboard/app.py
+
+---
+
+## Limitations
+
+- Not an official Eskom tool
+- Not for operational decisions
+- Free EskomSePush tier has daily limits
+
+---
+
+**Author:** Katlego Modiba
+## How to Run
+
+```bash
+git clone https://github.com/katlegomodiba45/sa-grid-health-monitor.git
+cd sa-grid-health-monitor
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run src/dashboard/app.py
