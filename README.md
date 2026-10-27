@@ -1,23 +1,35 @@
-# SA Grid Health & Outage Risk Monitor
+# SA Grid Resilience & Health Monitor
 
-Data pipeline and dashboard that monitors South African grid health, outage risk and weather using public data sources.
+**Data Engineer Portfolio Project**  
+Monitors South African electricity grid health, resilience indicators and weather conditions using public data.
 
-## Status
-🚧 In progress – currently building the foundation on mobile.
+---
 
-## Planned Features
-- Ingest grid status (EskomSePush / public sources)
-- Ingest weather data (Open-Meteo)
-- Clean and store data
-- Simple grid stress / risk score
-- Streamlit dashboard
+## Project Highlights
+
+- Live weather data for 4 major South African cities (Open-Meteo)
+- Grid status integration (EskomSePush)
+- Transparent Grid Stress / Resilience Score
+- Interactive Streamlit dashboard with charts and tables
+- Clean project structure and documented data sources
+
+---
 
 ## Data Sources
-- To be documented
 
-## How to run
-- Coming soon
+| Source        | Purpose              | Notes                          |
+|---------------|----------------------|--------------------------------|
+| Open-Meteo    | Weather data         | Free, no API key needed        |
+| EskomSePush   | Grid status          | Free API token required        |
 
-## Limitations
-- This is not an official Eskom tool
-- Not for operational decision making
+---
+
+## How to Run
+
+```bash
+git clone https://github.com/katlegomodiba45/sa-grid-health-monitor.git
+cd sa-grid-health-monitor
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run src/dashboard/app.py
